@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:id="@+id/txtTop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_title"
+        android:textSize="24sp" />
+
+    <!--С начала года прошло-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastDaysOfYear"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="365" />
+
+    <TextView
+        android:id="@+id/txtPastDaysOfYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtPastHoursOfYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtPastMinutesOfYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtPastSecondsOfYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+
+    <!--С начала месяца прошло ДНЕЙ-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/month_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastDaysOfMonth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtPastDaysOfMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+
+    <!--С начала недели прошло ДНЕЙ-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastDaysOfWeek"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7" />
+
+    <TextView
+        android:id="@+id/txtPastDaysOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+
+    <!--С начала суток прошло ЧАСОВ-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastHoursOfDay"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="24" />
+
+    <TextView
+        android:id="@+id/txtPastHoursOfDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+
+    <!--С начала часа прошло МИНУТ-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hour_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastMinutesOfHour"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="60" />
+
+    <TextView
+        android:id="@+id/txtPastMinutesOfHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+
+    <!--С начала минуты прошло СЕКУНД-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minute_title"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbPastSeсondsOfMinute"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="60" />
+
+    <TextView
+        android:id="@+id/txtPastSeсondsOfMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+</LinearLayout>

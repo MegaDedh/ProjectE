@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YouTime</string>
+    <string name="top_title">Сегодня уже %1$d %2$s</string>
+    <string name="year_title">С начала года прошло</string>
+    <string name="month_title">С начала месяца прошло</string>
+    <string name="week_title">С начала недели прошло</string>
+    <string name="day_title">С начала суток прошло</string>
+    <string name="hour_title">С начала часа прошло</string>
+    <string name="minute_title">С начала минуты прошло</string>
+    <string name="days_past">Дней: %1$d</string>
+    <string name="hours_past">Часов: %1$d</string>
+    <string name="minutes_past">Минут: %1$d</string>
+    <string name="seconds_past">Секунд: %1$d</string>
+</resources>
