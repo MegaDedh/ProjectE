@@ -1,1 +1,1 @@
-include ':youtime', ':p0971_2servicebindclient', ':p0972_2servicebindserver', ':p0981_servicebindinglocal', ':p1011_contentprovider'
+include ':youtime', ':p0971_2servicebindclient', ':p0972_2servicebindserver', ':p0981_servicebindinglocal', ':p1011_contentprovider', ':p1012_contprovclient', ':p1021_touch', ':p1031_multitouch', ':p1041_fragmentlifecycle'
