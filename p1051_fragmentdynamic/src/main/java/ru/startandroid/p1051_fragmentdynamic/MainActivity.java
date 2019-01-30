@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.btnAdd:
                 fTrans.add(R.id.frgmCont, frag1);
+        //        fTrans.add(R.id.frgmCont, frag2);
                 break;
             case R.id.btnRemove:
                 fTrans.remove(frag1);
