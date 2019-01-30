@@ -1,8 +1,9 @@
 package ru.startandroid.p1041_fragmentlifecycle;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +13,10 @@ public class Fragment1 extends Fragment {
     final String LOG_TAG = "myLogs";
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+        public void onAttach(Activity activity) {
+            super.onAttach(activity);
         Log.d(LOG_TAG, "Fragment1 onAttach");
     }
 
