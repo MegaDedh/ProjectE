@@ -1,6 +1,8 @@
 package ru.startandroid.p1061_fragmentactivity;
 
+import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,6 +12,24 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class Fragment2 extends Fragment {
+
+    public interface onSomeEventListener {
+        public void someEvent(String s);
+    }
+
+    onSomeEventListener someEventListener;
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            someEventListener = (onSomeEventListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString() + " must implement onSomeEventListener");
+        }
+    }
+
     final String LOG_TAG = "myLogs";
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -19,7 +39,7 @@ public class Fragment2 extends Fragment {
         Button button = (Button) v.findViewById(R.id.button);
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Log.d(LOG_TAG, "Button click in Fragment2");
+                someEventListener.someEvent("Test text to Fragment1");
             }
         });
 

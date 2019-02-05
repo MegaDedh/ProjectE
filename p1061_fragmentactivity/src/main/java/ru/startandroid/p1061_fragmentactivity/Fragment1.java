@@ -19,7 +19,7 @@ public class Fragment1 extends Fragment {
         Button button = (Button) v.findViewById(R.id.button);
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Log.d(LOG_TAG, "Button click in Fragment1");
+                ((Button)getActivity().findViewById(R.id.btnFind)).setText("Access from Fragment1");
             }
         });
 
