@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main);
         dlg1 = new Dialog1();
         dlg2 = new Dialog2();
+        dlg1.setCancelable(false); // Если вы не хотите, чтобы ваш диалог можно было закрыть кнопкой back
     }
 
     public void onClick(View v) {
