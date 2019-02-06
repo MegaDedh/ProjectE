@@ -3,6 +3,7 @@ package ru.startandroid.p1111_preferencefragment;
 import android.preference.PreferenceActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.List;
 
@@ -14,5 +15,7 @@ public class MainActivity extends PreferenceActivity {
     }
     public void onBuildHeaders(List<Header> target) {
         loadHeadersFromResource(R.xml.pref_head, target);
+        //Чтобы программно определить, будет экран делиться на две части или нет, можно использовать метод isMultiPane.
+        Log.d("myLogs", Boolean.toString(isMultiPane()));
     }
 }
