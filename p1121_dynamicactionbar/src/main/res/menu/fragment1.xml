@@ -7,4 +7,22 @@
         app:showAsAction="ifRoom|withText"
         android:title="@string/menu_item31">
     </item>
+    <item
+        android:id="@+id/frag2_item"
+        android:icon="@android:drawable/ic_dialog_email"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_item32">
+    </item>
+    <item
+        android:id="@+id/frag3_item"
+        android:icon="@android:drawable/ic_dialog_alert"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_item32">
+    </item>
+    <item
+        android:id="@+id/frag4_item"
+        android:icon="@android:drawable/ic_dialog_alert"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_item32">
+    </item>
 </menu>

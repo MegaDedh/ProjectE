@@ -2,6 +2,7 @@ package ru.startandroid.p1121_dynamicactionbar;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,4 +26,9 @@ public class Fragment1 extends Fragment {
         super.onCreateOptionsMenu(menu, inflater);
     }
 
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        Log.d("myLogs", "onPrepareOptionsMenu on Fragment1");
+    }
 }

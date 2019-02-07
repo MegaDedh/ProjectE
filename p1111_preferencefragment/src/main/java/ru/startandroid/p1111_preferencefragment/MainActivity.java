@@ -16,6 +16,7 @@ public class MainActivity extends PreferenceActivity {
     public void onBuildHeaders(List<Header> target) {
         loadHeadersFromResource(R.xml.pref_head, target);
         //Чтобы программно определить, будет экран делиться на две части или нет, можно использовать метод isMultiPane.
-        Log.d("myLogs", Boolean.toString(isMultiPane()));
+        // ЧЕГО-ТО НЕ РАБОТАЕТ(
+        Log.d("myLogs", Boolean.toString(this.isMultiPane()));
     }
 }

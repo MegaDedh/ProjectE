@@ -7,5 +7,6 @@ public class Fragment2 extends PreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.pref2);
+
     }
 }

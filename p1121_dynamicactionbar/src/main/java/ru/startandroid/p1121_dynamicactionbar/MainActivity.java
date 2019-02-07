@@ -3,10 +3,12 @@ package ru.startandroid.p1121_dynamicactionbar;
 import android.support.v7.app.AppCompatActivity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     final int MENU_ID = 1;
@@ -61,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
+
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        Log.d("myLogs", "onPrepareOptionsMenu on Activity");
+        return super.onPrepareOptionsMenu(menu);
 
     }
 }
