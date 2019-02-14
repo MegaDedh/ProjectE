@@ -1,6 +1,8 @@
 package ru.startandroid.p1151_multiplescreen;
 
 import ru.startandroid.p1151_multiplescreen.TitlesFragment.onItemClickListener;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -8,6 +10,7 @@ public class MainActivity extends FragmentActivity implements
         onItemClickListener {
 
     int position = 0;
+    boolean withDetails = true;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -15,16 +18,22 @@ public class MainActivity extends FragmentActivity implements
         setContentView(R.layout.main);
         if (savedInstanceState != null)
             position = savedInstanceState.getInt("position");
-        showDetails(position);
+        withDetails = (findViewById(R.id.cont) != null);
+        if (withDetails)
+            showDetails(position);
     }
 
     void showDetails(int pos) {
+        if (withDetails) {
         DetailsFragment details = (DetailsFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.cont);
         if (details == null || details.getPosition() != pos) {
             details = DetailsFragment.newInstance(pos);
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.cont, details).commit();
+        }
+        } else {
+            startActivity(new Intent(this, DetailsActivity.class).putExtra("position", position));
         }
     }
 
